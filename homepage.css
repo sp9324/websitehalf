@@ -1,0 +1,100 @@
+/* body */
+body {
+    background-color: rgb(237, 251, 251);
+}
+
+/* heading */
+#heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.662);
+    text-shadow: 0px 6px 4px rgb(172, 170, 170);
+}
+
+#intro {
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 999;
+}
+
+.introContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 63px;
+}
+
+/* images */
+
+.containerImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 138px;
+    margin-left: 45px;
+}
+
+.card-img-top {
+    /* padding: 12px; */
+    margin: 12px;
+    transition: all 0.8s ease-in;
+}
+
+.card-img-top:hover {
+    transform: scale(1.4);
+}
+
+#romcomimg {
+    box-shadow: 12px 12px 14px rgb(255, 190, 198);
+}
+
+#horrorimg {
+    box-shadow: 12px 12px 14px rgb(137, 86, 181);
+}
+
+#mysteryimg {
+    box-shadow: 12px 12px 14px rgb(177, 144, 100);
+}
+
+#actionimg {
+    box-shadow: 12px 12px 14px rgb(152, 247, 157);
+}
+
+#animatedimg {
+    box-shadow: 12px 12px 14px rgb(248, 243, 148);
+}
+
+
+/* subtitles */
+.subContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    position: relative;
+}
+
+/* footer */
+.footer {
+    position: absolute;
+    top: 536px;
+    left: 513px;
+}
+
+.links {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(114, 110, 110);
+    text-decoration: none;
+    padding: 18px;
+    font-size: 19px;
+}
+
+.links:hover {
+    color: rgb(203, 203, 203);
+}
