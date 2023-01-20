@@ -1,16 +1,3 @@
-var i = 0;
-var txt = 'Horror movies';
-var speed = 90;
-
-window.onload = function typeWriter() {
-    window.scrollTo(0,0);
-    if (i < txt.length) {
-        document.getElementById("main-heading").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
-
 const arrow1 = document.getElementById("arrow1");
 const arrow2 = document.getElementById("arrow2");
 const arrow3 = document.getElementById("arrow3");
@@ -31,6 +18,22 @@ arrow3.addEventListener("click", function () {
     window.scrollTo(0, 2088);
 })
 arrow4.addEventListener("click", function () {
-    window.scrollTo(0, 2788);
+    window.scrollTo(0, 2870);
 })
+
+const spans = document.querySelectorAll('.word span');
+
+spans.forEach((span, idx) => {
+	span.addEventListener('click', (e) => {
+		e.target.classList.add('active');
+	});
+	span.addEventListener('animationend', (e) => {
+		e.target.classList.remove('active');
+	});
+	
+	// Initial animation
+	setTimeout(() => {
+		span.classList.add('active');
+	}, 750 * (idx+1))
+});
   

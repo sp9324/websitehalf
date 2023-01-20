@@ -1,18 +1,39 @@
 body{
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(229, 197, 223);
 }
 
 a {
     text-decoration: none;
 }
 
-#main-heading {
-    font-family: 'Balsamiq Sans', cursive;
-    font-size: 54px;
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family: 'Dancing Script', cursive;
     position: absolute;
-    top: 24px;
-    left: 591px;
-}
+    top: -21px;
+    left: 555px;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+/* #main-heading {
+    font-family: 'Dancing Script', cursive;
+    font-size: 64px;
+    position: absolute;
+    top: -21px;
+    left: 565px;
+    color: purple;
+} */
 
 /* main content */
 #homeicon-btn {
@@ -38,7 +59,7 @@ a {
     transform: scale(1.6);
     margin-bottom: 440px;
     transition: all ease-in 0.5s;
-    box-shadow: 10px 10px 14px #4e4949;
+    box-shadow: 10px 10px 14px #cf72b9;
 }
 
 .indImage:hover {
@@ -47,53 +68,54 @@ a {
 
 /* titles */
 .titles {
-    font-family: 'Caveat', cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 32px;
-    color: rgb(61, 5, 61);
-    text-shadow: 4px 4px 8px rgb(95, 94, 94);
+    color: #b43fb4;
+    text-shadow: 4px 4px 6px rgb(181 73 172);
 }
 
-#thing-title {
+#chhichhore-title {
     position: absolute;
     top: 138px;
-    left: 704px;
+    left: 684px;
 }
 
-#tumbbad-title {
+#citylights-title {
     position: absolute;
     top: 840px;
-    left: 704px;
+    left: 674px;
 }
 
-#shining-title {
+#moderntimes-title {
     position: absolute;
     top: 1541px;
-    left: 679px;
+    left: 652px;
 }
 
-#psycho-title {
+#lifeisbeautiful-title {
     position: absolute;
     top: 2240px;
-    left: 704px;
+    left: 650px;
 }
 
-#alien-title {
+#forrestgump-title {
     position: absolute;
     top: 2941px;
-    left: 714px;
+    left: 656px;
 }
 
 /* subtitles */
 .subtitles {
-    font-size: 25px;
-    font-family: 'Caveat', cursive;
-    color: rgb(61, 5, 61);
+    font-size: 22px;
+    font-family: 'Pacifico', cursive;
+    color: #9d269d;
+    font-weight: 100;
 }
 
 #subtitle-1 {
     position: absolute;
     top: 630px;
-    left: 302px;
+    left: 30px;
 }
 
 #subtitle-2 {
@@ -104,20 +126,21 @@ a {
 
 #subtitle-3 {
     position: absolute;
-    top: 2035px;
-    left: 12px;
+    top: 2024px;
+    left:48px;
 }
 
 #subtitle-4 {
     position: absolute;
-    top: 2736px;
+    top: 2729px;
     left: 44px;
 }
 
 #subtitle-5 {
     position: absolute;
     top: 3441px;
-    left: 298px;
+    left: 41px;
+    margin-right: 28px
 }
 
 /* arrows */
@@ -138,7 +161,7 @@ a {
 
 #arrow4 {
     position: absolute;
-    top: 2820px;
+    top: 2838px;
 }
 
 .downarrows:hover {

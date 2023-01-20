@@ -1,21 +1,103 @@
 /* body */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+body {
+  background: #6868AC;
+}
+
+#heading {
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 4rem;
+  position: absolute;
+  text-shadow: -15px 5px 20px #ced0d3;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650, 
+    10px 10px 0px #FFD662, 
+    15px 15px 0px  #FF80BF, 
+    20px 20px 0px #EF5097, 
+    25px 25px 0px #6868AC, 
+    30px 30px 0px #90B1E0;
+}
+
+/* snow-effect */
+
+.hero {
+    opacity: 0.7;
+	/* background-image: radial-gradient(50% 176%, #5a554feb 80%, #212121 100%); */
+	background-image: radial-gradient(50% 176%, rgb(223, 118, 255) 80%, rgb(232, 50, 232) 100%);
+	min-height: 100vh;
+	/* min-height: 30rem; */
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+	
+	&__content {
+		position: relative;
+		align-self: center;
+		padding: 3rem 0;
+	}
+}
+
+.snow {
+	position: absolute;
+	min-width: 100vw;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.snow .svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#snow-top-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+
 body {
     background-color: rgb(237, 251, 251);
 }
 
-/* heading */
-#heading {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 48px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.662);
-    text-shadow: 0px 6px 4px rgb(172, 170, 170);
-}
-
 #intro {
     position: absolute;
-    font-family: 'Josefin Sans', sans-serif;
+    top: 93px;
+    font-family: "Josefin Sans", sans-serif;
     z-index: 999;
+    left: 727px;
+    color: #b6abab;
 }
 
 .introContainer {
@@ -37,35 +119,14 @@ body {
 }
 
 .card-img-top {
-    /* padding: 12px; */
     margin: 12px;
-    transition: all 0.8s ease-in;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid black;
 }
 
 .card-img-top:hover {
-    transform: scale(1.4);
+    transform: translateY(-24px);
 }
-
-#romcomimg {
-    box-shadow: 12px 12px 14px rgb(255, 190, 198);
-}
-
-#horrorimg {
-    box-shadow: 12px 12px 14px rgb(137, 86, 181);
-}
-
-#mysteryimg {
-    box-shadow: 12px 12px 14px rgb(177, 144, 100);
-}
-
-#actionimg {
-    box-shadow: 12px 12px 14px rgb(152, 247, 157);
-}
-
-#animatedimg {
-    box-shadow: 12px 12px 14px rgb(248, 243, 148);
-}
-
 
 /* subtitles */
 .subContainer {
@@ -78,6 +139,9 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 28px;
     position: relative;
+    color: rgb(140, 0, 196);
+    font-weight: bold;
+    text-shadow: 2px 6px 6px rgb(82, 81, 81);
 }
 
 /* footer */
@@ -89,12 +153,26 @@ body {
 
 .links {
     font-family: 'Josefin Sans', sans-serif;
-    color: rgb(114, 110, 110);
+    color: rgb(140, 0, 196);
     text-decoration: none;
     padding: 18px;
-    font-size: 19px;
+    font-size: 22px;
 }
 
 .links:hover {
-    color: rgb(203, 203, 203);
+    color: rgb(203, 72, 255);
 }
+
+.footer{
+    position: absolute;
+    top: 594px;
+    left: 363px;
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }

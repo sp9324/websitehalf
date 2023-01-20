@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(185, 185, 185);
+    background-color: #c2ebf9;
 }
 
 a {
@@ -7,11 +7,13 @@ a {
 }
 
 #main-heading {
-    font-family: 'Balsamiq Sans', cursive;
-    font-size: 54px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
     position: absolute;
-    top: 24px;
-    left: 591px;
+    top: 7px;
+    left: 600px;
+    -webkit-text-stroke: rgb(87, 87, 234) 3px;
+    text-shadow: 0px 12px 10px black; 
 }
 
 /* main content */
@@ -38,7 +40,7 @@ a {
     transform: scale(1.6);
     margin-bottom: 440px;
     transition: all ease-in 0.5s;
-    box-shadow: 10px 10px 14px #4e4949;
+    box-shadow: 10px 10px 14px #312a6b;
 }
 
 .indImage:hover {
@@ -47,65 +49,66 @@ a {
 
 /* titles */
 .titles {
-    font-family: 'Caveat', cursive;
+    font-family: 'Righteous', cursive;
     font-size: 32px;
     color: rgb(61, 5, 61);
     text-shadow: 4px 4px 8px rgb(95, 94, 94);
 }
 
-#thing-title {
+#starwars-title {
     position: absolute;
     top: 138px;
-    left: 704px;
+    left: 673px;
 }
 
-#tumbbad-title {
+#matrix-title {
     position: absolute;
     top: 840px;
-    left: 704px;
+    left: 662px;
 }
 
-#shining-title {
+#inception-title {
     position: absolute;
     top: 1541px;
     left: 679px;
 }
 
-#psycho-title {
+#lordoftherings-title {
     position: absolute;
     top: 2240px;
-    left: 704px;
+    left: 577px;
 }
 
-#alien-title {
+#darkknight-title {
     position: absolute;
     top: 2941px;
-    left: 714px;
+    left: 666px;
 }
 
 /* subtitles */
 .subtitles {
-    font-size: 25px;
-    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
     color: rgb(61, 5, 61);
 }
 
 #subtitle-1 {
     position: absolute;
-    top: 630px;
-    left: 302px;
+    top: 640px;
+    left: 83px;
 }
 
 #subtitle-2 {
     position: absolute;
-    top: 1334px;
-    left: 103px;
+    top: 1344px;
+    left: 65px;
 }
 
 #subtitle-3 {
     position: absolute;
     top: 2035px;
-    left: 12px;
+    left: 64px;
+    margin-right: 39px
 }
 
 #subtitle-4 {
@@ -117,7 +120,8 @@ a {
 #subtitle-5 {
     position: absolute;
     top: 3441px;
-    left: 298px;
+    left: 57px;
+    margin-right: 24px;
 }
 
 /* arrows */
@@ -144,3 +148,5 @@ a {
 .downarrows:hover {
     opacity: 0.4;
 }
+
+

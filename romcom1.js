@@ -1,6 +1,6 @@
 var i = 0;
-var txt = 'Horror movies';
-var speed = 90;
+var txt = 'Rom-Com movies';
+var speed = 96;
 
 window.onload = function typeWriter() {
     window.scrollTo(0,0);
@@ -31,6 +31,6 @@ arrow3.addEventListener("click", function () {
     window.scrollTo(0, 2088);
 })
 arrow4.addEventListener("click", function () {
-    window.scrollTo(0, 2788);
+    window.scrollTo(0, 2820);
 })
   

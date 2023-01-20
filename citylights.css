@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(138 135 135);
+    background-color: rgb(205 186 150);
     overflow: hidden;
     /* overflow-y: hidden; */
 
@@ -11,7 +11,6 @@ body {
 }
 
 /* main content */
-
 #backicon-btn{
     position: absolute;
     top: 520px;
@@ -34,13 +33,13 @@ body {
     width: 30px;
 }
 header::before {
-    background: url('https://images-na.ssl-images-amazon.com/images/I/61Mf%2B-TcV8L.jpg') no-repeat center center/cover;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/0/09/City_Lights_%281931_theatrical_poster_-_retouched%29.jpg') no-repeat bottom center/cover;
     content: "";
     position: absolute;
-    top: -85px;
+    top: 0px;
     left: 0;
     width: 100%;
-    height: 74%;
+    height: 70%;
     z-index: -1;
 }
 
@@ -66,14 +65,14 @@ header::before {
 
 .show-text {
     display: inline-block;
-    font-family: 'Kalam', cursive;
+    font-family: 'Dancing Script', cursive;
     font-style: italic;
     width: 220px;
     color: white;
 }
 
 .ind-desc-btn {
-    background-color: rgba(79, 76, 76, 0.9);
+    background-color: rgba(79, 76, 76, 0.8);
     cursor: pointer;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -82,14 +81,30 @@ header::before {
     border-radius: 16px;
     width: 344px;
     transition: all 0.3s ease-in;
-    font-size: 16px;
-    font-family: 'Kalam', cursive;
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
     color: rgb(199, 198, 198);
     font-weight: bold;
 }
 
 .ind-desc-btn:hover {
     color: rgb(230, 227, 227);
+}
+
+
+#title {
+    position: absolute;
+    top: 180px;
+    left: 56px;
+    font-size: 78px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 1000;
+    transition: all ease-in-out 0.8s;
+    text-shadow: 4px 4px 6px gray;
+}
+
+#title:hover {
+    transform: scale(1.2);
 }
 
 /* similar movies */
@@ -102,7 +117,7 @@ header::before {
 .indImage {
     margin: 24px;
     transition: all ease-in-out 0.5s;
-    box-shadow: 2px 10px 14px rgb(173, 173, 173);
+    box-shadow: 2px 10px 14px rgb(238, 208, 109);
 }
 
 .indImage:hover {
@@ -111,10 +126,10 @@ header::before {
 
 #similar-title {
     position: absolute;
-    top: 552px;
-    left: 615px;
-    font-size: 28px;
-    font-family: 'Kalam', cursive;
-    color: #afacac;
+    top: 548px;
+    left: 645px;
+    font-size: 37px;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(80 77 77);
     font-style: italic;
 }

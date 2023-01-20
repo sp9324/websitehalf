@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Horror movies';
+var txt = 'Action movies';
 var speed = 90;
 
 window.onload = function typeWriter() {

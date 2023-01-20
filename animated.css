@@ -1,0 +1,211 @@
+body {
+    background-color: rgb(198 217 241);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 50px;
+}
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+    margin-right: -22px;
+}
+
+.title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+
+.title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+    margin-right: -22px;
+}
+
+.title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+/* main content */
+#homeicon-btn {
+	position: absolute;
+	top: 26px;
+	left: 1450px;
+	cursor: pointer;
+}
+
+#homeicon-btn-img {
+	height: 30px;
+	width: 30px;
+}
+.imagesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 97px;
+}
+
+.indImage {
+    transform: scale(1.6);
+    margin-bottom: 440px;
+    transition: all ease-in 0.5s;
+    box-shadow: 10px 10px 14px #899ef1;
+}
+
+.indImage:hover {
+    transform: scale(1.8);
+}
+
+/* titles */
+.titles {
+    font-family: fantasy;
+    font-size: 28px;
+    font-weight: 50px;
+    color: rgb(61, 5, 61);
+    text-shadow: 2px 2px 4px rgb(162, 133, 248);
+}
+
+#spider-title {
+    position: absolute;
+    top: 175px;
+    left: 508px;
+}
+
+#yourname-title {
+    position: absolute;
+    top: 875px;
+    left: 650px;
+}
+
+#fireflies-title {
+    position: absolute;
+    top: 1579px;
+    left: 656px;
+}
+
+#lionking-title {
+    position: absolute;
+    top: 2275px;
+    left: 704px;
+}
+
+#spiritedaway-title {
+    position: absolute;
+    top: 2975px;
+    left: 684px;
+}
+
+/* subtitles */
+.subtitles {
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: 20;
+    color: rgb(61, 5, 61);
+}
+
+#subtitle-1 {
+    position: absolute;
+    top: 630px;
+    left: 50px;
+}
+
+#subtitle-2 {
+    position: absolute;
+    top: 1334px;
+    left: 55px;
+    margin-right: 65px;
+}
+
+#subtitle-3 {
+    position: absolute;
+    top: 2035px;
+    left: 12px;
+}
+
+#subtitle-4 {
+    position: absolute;
+    top: 2736px;
+    left: 44px;
+}
+
+#subtitle-5 {
+    position: absolute;
+    top: 3441px;
+    left: 30px;
+    margin-right: 48px;
+}
+
+/* arrows */
+#arrow1 {
+    position: absolute;
+    top: 700px;
+}
+
+#arrow2 {
+    position: absolute;
+    top: 1452px;
+}
+
+#arrow3 {
+    position: absolute;
+    top: 2196px;
+}
+
+#arrow4 {
+    position: absolute;
+    top: 2820px;
+}
+
+.downarrows:hover {
+    opacity: 0.4;
+}

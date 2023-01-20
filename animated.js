@@ -1,16 +1,3 @@
-var i = 0;
-var txt = 'Horror movies';
-var speed = 90;
-
-window.onload = function typeWriter() {
-    window.scrollTo(0,0);
-    if (i < txt.length) {
-        document.getElementById("main-heading").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
-
 const arrow1 = document.getElementById("arrow1");
 const arrow2 = document.getElementById("arrow2");
 const arrow3 = document.getElementById("arrow3");
